@@ -7,77 +7,72 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="Anime_Complex")
 public class Alist {
-	private int id;
 	@Id
-	private String name;
-	private String mcname;
-	private long year;
-	private int episodes;
-	private int tduration;
-	private String creator;
-	private String proname;
-	private String budget;
-	private String status;
+	private int id;
+	private String A_name;
+	private String B_mcname;
+	private String C_creator;
+	private String D_proname;
+	private long E_year;
+	private int F_episodes;
+	private int G_tduration;
+	private String H_status;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getA_name() {
+		return A_name;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setA_name(String a_name) {
+		A_name = a_name;
 	}
-	public String getMcname() {
-		return mcname;
+	public String getB_mcname() {
+		return B_mcname;
 	}
-	public void setMcname(String mcname) {
-		this.mcname = mcname;
+	public void setB_mcname(String b_mcname) {
+		B_mcname = b_mcname;
 	}
-	public long getYear() {
-		return year;
+	public String getC_creator() {
+		return C_creator;
 	}
-	public void setYear(int year) {
-		this.year = year;
+	public void setC_creator(String c_creator) {
+		C_creator = c_creator;
 	}
-	public int getEpisodes() {
-		return episodes;
+	public String getD_proname() {
+		return D_proname;
 	}
-	public void setEpisodes(int episodes) {
-		this.episodes = episodes;
+	public void setD_proname(String d_proname) {
+		D_proname = d_proname;
 	}
-	public int getTduration() {
-		return tduration;
+	public long getE_year() {
+		return E_year;
 	}
-	public void setTduration(int tduration) {
-		this.tduration = tduration;
+	public void setE_year(long e_year) {
+		E_year = e_year;
 	}
-	public String getCreator() {
-		return creator;
+	public int getF_episodes() {
+		return F_episodes;
 	}
-	public void setCreator(String creator) {
-		this.creator = creator;
+	public void setF_episodes(int f_episodes) {
+		F_episodes = f_episodes;
 	}
-	public String getProname() {
-		return proname;
+	public int getG_tduration() {
+		return G_tduration;
 	}
-	public void setProname(String proname) {
-		this.proname = proname;
+	public void setG_tduration(int g_tduration) {
+		G_tduration = g_tduration;
 	}
-	public String getBudget() {
-		return budget;
+	public String getH_status() {
+		return H_status;
 	}
-	public void setBudget(String budget) {
-		this.budget = budget;
+	public void setH_status(String h_status) {
+		H_status = h_status;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
+	
+	
 	
 
 }

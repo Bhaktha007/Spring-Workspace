@@ -16,19 +16,8 @@ public class AService
 		return repo.save(al);
 	}
 
-	public Alist updateDetails(Alist al) 
-	{
-		return repo.saveAndFlush(al);
-	}
-
-	public void deleteDetails(String id) 
+	public void deleteDetails(int id) 
 	{
 		repo.deleteById(id);
 	}
-
-	public Alist getDetails(Alist al) 
-	{
-		return repo.saveAndFlush(null);
-	}
-
 }
