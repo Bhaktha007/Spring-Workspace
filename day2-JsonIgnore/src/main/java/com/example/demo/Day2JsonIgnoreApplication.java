@@ -17,5 +17,4 @@ public class Day2JsonIgnoreApplication
 		String ign = obj.writeValueAsString(per);
 		System.out.println(ign);
 	}
-
 }
