@@ -9,68 +9,69 @@ import jakarta.persistence.Table;
 public class Alist {
 	@Id
 	private int id;
-	private String A_name;
-	private String B_mcname;
-	private String C_creator;
-	private String D_proname;
-	private long E_year;
-	private int F_episodes;
-	private int G_tduration;
-	private String H_status;
+	private String Aname;
+	private String Bmcname;
+	private String Ccreator;
+	private String Dproname;
+	private long Eyear;
+	private int Fepisodes;
+	private int Gtduration;
+	private String Hstatus;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getA_name() {
-		return A_name;
+	public String getAname() {
+		return Aname;
 	}
-	public void setA_name(String a_name) {
-		A_name = a_name;
+	public void setAname(String aname) {
+		Aname = aname;
 	}
-	public String getB_mcname() {
-		return B_mcname;
+	public String getBmcname() {
+		return Bmcname;
 	}
-	public void setB_mcname(String b_mcname) {
-		B_mcname = b_mcname;
+	public void setBmcname(String bmcname) {
+		Bmcname = bmcname;
 	}
-	public String getC_creator() {
-		return C_creator;
+	public String getCcreator() {
+		return Ccreator;
 	}
-	public void setC_creator(String c_creator) {
-		C_creator = c_creator;
+	public void setCcreator(String ccreator) {
+		Ccreator = ccreator;
 	}
-	public String getD_proname() {
-		return D_proname;
+	public String getDproname() {
+		return Dproname;
 	}
-	public void setD_proname(String d_proname) {
-		D_proname = d_proname;
+	public void setDproname(String dproname) {
+		Dproname = dproname;
 	}
-	public long getE_year() {
-		return E_year;
+	public long getEyear() {
+		return Eyear;
 	}
-	public void setE_year(long e_year) {
-		E_year = e_year;
+	public void setEyear(long eyear) {
+		Eyear = eyear;
 	}
-	public int getF_episodes() {
-		return F_episodes;
+	public int getFepisodes() {
+		return Fepisodes;
 	}
-	public void setF_episodes(int f_episodes) {
-		F_episodes = f_episodes;
+	public void setFepisodes(int fepisodes) {
+		Fepisodes = fepisodes;
 	}
-	public int getG_tduration() {
-		return G_tduration;
+	public int getGtduration() {
+		return Gtduration;
 	}
-	public void setG_tduration(int g_tduration) {
-		G_tduration = g_tduration;
+	public void setGtduration(int gtduration) {
+		Gtduration = gtduration;
 	}
-	public String getH_status() {
-		return H_status;
+	public String getHstatus() {
+		return Hstatus;
 	}
-	public void setH_status(String h_status) {
-		H_status = h_status;
+	public void setHstatus(String hstatus) {
+		Hstatus = hstatus;
 	}
+	
 	
 	
 	

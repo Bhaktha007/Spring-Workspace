@@ -1,5 +1,7 @@
 package com.example.demo.Service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,4 +22,13 @@ public class AService
 	{
 		repo.deleteById(id);
 	}
+	public List<Alist> getInfo()
+	{
+		return repo.findAll();
+	}
+	public Alist updateInfo(Alist ali)
+	{
+		return repo.saveAndFlush(ali);
+	}
+	
 }
