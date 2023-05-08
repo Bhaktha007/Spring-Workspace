@@ -18,7 +18,7 @@ public interface CRepo extends JpaRepository<CustomerInfo, Integer> {
 	@Query(value="select * from customer_table",nativeQuery=true)
 	public List<CustomerInfo> getAllData();
 	
-	@Query(value="select * from customer_table where cusid=id",nativeQuery=true)
+	@Query(value="select * from customer_table where cusid=:id",nativeQuery=true)
 	public List<CustomerInfo> bycusid(@Param("id")int id);
 	
 	@Query(value="select * from customer_table cusid between:start and :end",nativeQuery=true)
@@ -31,7 +31,7 @@ public interface CRepo extends JpaRepository<CustomerInfo, Integer> {
 	
 	@Modifying
 	@Transactional
-	@Query(value="update from customer_table set cusid=id where cusname=cname",nativeQuery=true)
+	@Query(value="update from customer_table set cusname=:cname where cusid=:id ",nativeQuery=true)
 	public CustomerInfo update(@Param("id")int id,@Param("cname")String cname);
 	
 	//JPQL QUERY STATEMENT
@@ -40,7 +40,7 @@ public interface CRepo extends JpaRepository<CustomerInfo, Integer> {
 			@Query("select i from CustomerInfo i where i.cusname=?1")
 			public CustomerInfo queryByTypeD(@Param("name")String name);
 			
-			//Get Between
+			//Get Between	
 			@Query("select i from CustomerInfo i where i.cusid between ?1 and ?2")
 			public List<CustomerInfo> betweenD(@Param("start")int start,@Param("end")int end);
 			

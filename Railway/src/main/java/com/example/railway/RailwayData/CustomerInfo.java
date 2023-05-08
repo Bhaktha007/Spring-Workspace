@@ -36,7 +36,7 @@ public class CustomerInfo {
 	public void setCusname(String cusname) {
 		this.cusname = cusname;
 	}
-	public String getCusgender() {
+	public String getCusgen() {
 		return cusgen;
 	}
 	public void setCusgen(String cusgen) {

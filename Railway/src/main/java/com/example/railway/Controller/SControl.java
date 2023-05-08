@@ -73,7 +73,7 @@ public class SControl {
 			return ser.saveData(sh);
 		}
 		
-		@Tag(name = "Update by ID Method for Shoe Info",description = "Update Details")
+		@Tag(name = "Update by ID Method for StationInfo",description = "Update Details")
 		@PutMapping("/iput/{name}/{id}")
 		public StationInfo updateInfo(@PathVariable("id")int id,@PathVariable("cname") String cname)
 		{
