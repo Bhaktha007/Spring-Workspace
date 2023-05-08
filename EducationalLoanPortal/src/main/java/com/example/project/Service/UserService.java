@@ -50,5 +50,11 @@ public class UserService {
 		return gbi;
 		
 	}
+	public void deleteByID(int id) {
+		userRep.deleteById(id);
+	}
+	public UserModel update(UserModel um) {
+		return userRep.saveAndFlush(um);
+	}
 
 }
